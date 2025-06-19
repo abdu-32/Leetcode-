@@ -5,8 +5,8 @@ class Solution:
         for i in range(lenght + 1):
             sets.add(i)
         diff = sets.difference(nums)
-        for res in diff:
-            return res
+        for result in diff:
+            return result
     
 
         
