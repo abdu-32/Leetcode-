@@ -6,13 +6,13 @@ class Solution(object):
         :type right: int
         :rtype: bool
         """
-        s = set()
+        se = set()
         for start , end in ranges:
             for i in range(start,end+1):
-                s.add(i)
+                se.add(i)
 
         for num in range(left,right+1):
-            if num not in s:
+            if num not in se:
                 return False
             
         return True
